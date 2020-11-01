@@ -64,22 +64,23 @@ Exhibition of more predicted samples, in which the predicted road center points 
 # Output Visualization
 Exhibition of some road segmentation results on the Google Earth & Massachusetts Roads dataset.
 <table>
-<tr><td><img src='resources/image1.jpg?raw=true' /></td><td><img src='resources/image1_overlay.jpg?raw=true' /></td><tr>
-<tr><td><img src='resources/image2.jpg?raw=true' /></td><td><img src='resources/image2_overlay.jpg?raw=true' /></td><tr>
-<tr><td><img src='resources/image7.jpg?raw=true' /></td><td><img src='resources/image7_overlay.jpg?raw=true' /></td><tr>
-<tr><td><img src='resources/image24.jpg?raw=true' /></td><td><img src='resources/image24_overlay.jpg?raw=true' /></td><tr>
-<tr><td><img src='resources/image37.jpg?raw=true' /></td><td><img src='resources/image37_overlay.jpg?raw=true' /></td><tr>
-<tr><td><img src='resources/image45.jpg?raw=true' /></td><td><img src='resources/image45_overlay.jpg?raw=true' /></td><tr>
-<tr><td><img src='resources/image46.jpg?raw=true' /></td><td><img src='resources/image46_overlay.jpg?raw=true' /></td><tr>
-<tr><td><img src='resources/image92.jpg?raw=true' /></td><td><img src='resources/image92_overlay.jpg?raw=true' /></td><tr>
-<tr><td><img src='resources/image3.jpg?raw=true' /></td><td><img src='resources/image3_overlay.jpg?raw=true' /></td><tr>
-<tr><td><img src='resources/image8.jpg?raw=true' /></td><td><img src='resources/image8-overlay.jpg?raw=true' /></td><tr>
-<tr><td><img src='resources/11128870_15.tiff?raw=true' /></td><td><img src='resources/11128870_15_overlay.jpg?raw=true' /></td><tr>
-<tr><td><img src='resources/11728825_15.tiff?raw=true' /></td><td><img src='resources/11728825_15_overlay.jpg?raw=true' /></td><tr>
-<tr><td><img src='resources/18328960_15.tiff?raw=true' /></td><td><img src='resources/18328960_15_overlay.jpg?raw=true' /></td><tr>
-<tr><td><img src='resources/18478930_15.tiff?raw=true' /></td><td><img src='resources/18478930_15_overlay.jpg?raw=true' /></td><tr>
-<tr><td><img src='resources/20728960_15.tiff?raw=true' /></td><td><img src='resources/20728960_15_overlay.jpg?raw=true' /></td><tr>
-<tr><td><img src='resources/20878930_15.tiff?raw=true' /></td><td><img src='resources/20878930_15_overlay.jpg?raw=true' /></td><tr>
-<tr><td><img src='resources/23278915_15.tiff?raw=true' /></td><td><img src='resources/23278915_15_overlay.jpg?raw=true' /></td><tr>
+<tr><td><img src='resources/image1.jpg?raw=true' /></td><td><img src='resources/image1_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/image2.jpg?raw=true' /></td><td><img src='resources/image2_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/image7.jpg?raw=true' /></td><td><img src='resources/image7_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/image24.jpg?raw=true' /></td><td><img src='resources/image24_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/image37.jpg?raw=true' /></td><td><img src='resources/image37_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/image45.jpg?raw=true' /></td><td><img src='resources/image45_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/image46.jpg?raw=true' /></td><td><img src='resources/image46_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/image92.jpg?raw=true' /></td><td><img src='resources/image92_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/image3.jpg?raw=true' /></td><td><img src='resources/image3_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/image8.jpg?raw=true' /></td><td><img src='resources/image8-overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/11128870_15.tiff?raw=true' /></td><td><img src='resources/11128870_15_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/11728825_15.tiff?raw=true' /></td><td><img src='resources/11728825_15_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/18328960_15.tiff?raw=true' /></td><td><img src='resources/18328960_15_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/18478930_15.tiff?raw=true' /></td><td><img src='resources/18478930_15_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/20728960_15.tiff?raw=true' /></td><td><img src='resources/20728960_15_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/20878930_15.tiff?raw=true' /></td><td><img src='resources/20878930_15_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/23278915_15.tiff?raw=true' /></td><td><img src='resources/23278915_15_overlay.jpg?raw=true' /></td></tr>
 </table>
+Checking the results of our approach in Massachusetts roads, although there are some false positives and false negatives, we find that roads really exist in the regions of false positive (red) and no road exists in the false negative area (blue). Thus, higher scores do not necessarily mean better segmentation in Massachusetts road dataset. 
 
