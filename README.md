@@ -4,6 +4,9 @@
   <b>Abstract: </b>
 Road segmentation methods based on Deep Neural Networks have achieved great success in recent years, but creating accurate pixel-wise training labels is still a boring and expensive task, especially for large-scale high-resolution remote sensing images (HRSI). Inspired by the stacked hourglass model for human joints detection, we propose a weakly-supervised road segmentation method using point annotations in this article. First, we design a patch-based DCNN model for road seeds and background points detection and train the model using point annotations. Then, in the process of road segmentation, the DCNN model detects a series of road and background points that are used to train a Support Vector Machine Classifier (SVC) for classifying each pixel into road or non-road. According to the local geometry shape of road and the inaccurate classification of SVC, a Multi-scale & Multi-direction Gabor Filter (MMGF) is put forward to estimate the road potential. Finally, the Active Contour Model based on local binary fitting energy (LBF-Snake) is introduced to extract the road regions from the inhomogeneous road potential. Qualitative and Quantitative comparisons show that our method achieves competitive results comparing to fully-supervised semantic methods on publicly available datasets.
   </p>
+<p>
+  Note: the paper is undergoing review.
+</p>
 
 # Dataset
 We use <a href='http://www.cs.toronto.edu/~vmnih/data/'>Massachusetts Roads Dataset</a> and <a href='http://www.escience.cn/people/guangliangcheng/Datasets.html'>Google Earth</a> to evaluation the performance of our method. 
@@ -74,13 +77,13 @@ Exhibition of some road segmentation results on the Google Earth & Massachusetts
 <tr><td><img src='resources/image92.jpg?raw=true' /></td><td><img src='resources/image92_overlay.jpg?raw=true' /></td></tr>
 <tr><td><img src='resources/image3.jpg?raw=true' /></td><td><img src='resources/image3_overlay.jpg?raw=true' /></td></tr>
 <tr><td><img src='resources/image8.jpg?raw=true' /></td><td><img src='resources/image8-overlay.jpg?raw=true' /></td></tr>
-<tr><td><img src='resources/11128870_15.tiff?raw=true' /></td><td><img src='resources/11128870_15_overlay.jpg?raw=true' /></td></tr>
-<tr><td><img src='resources/11728825_15.tiff?raw=true' /></td><td><img src='resources/11728825_15_overlay.jpg?raw=true' /></td></tr>
-<tr><td><img src='resources/18328960_15.tiff?raw=true' /></td><td><img src='resources/18328960_15_overlay.jpg?raw=true' /></td></tr>
-<tr><td><img src='resources/18478930_15.tiff?raw=true' /></td><td><img src='resources/18478930_15_overlay.jpg?raw=true' /></td></tr>
-<tr><td><img src='resources/20728960_15.tiff?raw=true' /></td><td><img src='resources/20728960_15_overlay.jpg?raw=true' /></td></tr>
-<tr><td><img src='resources/20878930_15.tiff?raw=true' /></td><td><img src='resources/20878930_15_overlay.jpg?raw=true' /></td></tr>
-<tr><td><img src='resources/23278915_15.tiff?raw=true' /></td><td><img src='resources/23278915_15_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/11128870_15.jpg?raw=true' /></td><td><img src='resources/11128870_15_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/11728825_15.jpg?raw=true' /></td><td><img src='resources/11728825_15_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/18328960_15.jpg?raw=true' /></td><td><img src='resources/18328960_15_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/18478930_15.jpg?raw=true' /></td><td><img src='resources/18478930_15_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/20728960_15.jpg?raw=true' /></td><td><img src='resources/20728960_15_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/20878930_15.jpg?raw=true' /></td><td><img src='resources/20878930_15_overlay.jpg?raw=true' /></td></tr>
+<tr><td><img src='resources/23278915_15.jpg?raw=true' /></td><td><img src='resources/23278915_15_overlay.jpg?raw=true' /></td></tr>
 </table>
 Checking the results of our approach in Massachusetts roads, although there are some false positives and false negatives, we find that roads really exist in the regions of false positive (red) and no road exists in the false negative area (blue). Thus, higher scores do not necessarily mean better segmentation in Massachusetts road dataset. 
 
