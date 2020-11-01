@@ -2,7 +2,7 @@
 
 <p>
   <b>Abstract: </b>
-The road extraction methods based on semantic segmentation have achieved great success in recent years, but creating accurate pixel-wise labels is a boring and expensive task, especially for large-scale high-resolution remote sensing images (HRSI). Inspired by stacked hourglass model for human joints detection, this paper proposes a weakly-supervised road segmentation method based on point annotations. First, a patch-based road center point estimation network is designed and trained by point labels in advance. Then, in the process of segmentation, the network infers a series of road and background seeds for training a support vector classifier (SVC), which conversely classifies all the pixels into road and non-road classes. According to the local geometry shape of road and the inaccurate classification of SVC, a multi-scale & multi-direction Gabor filter (MMGK) is proposed to compute the road probability density estimation (RPDE). Due to the inhomogeneous intensity of RPDE, an Active Contour Model based on local binary fitting energy (LBF-Snake) is introduced to extract the road regions from RPDE. Qualitative and Quantitative comparisons show that our method achieves competitive results comparing to fully-supervised semantic methods in publicly available datasets.
+Road segmentation methods based on Deep Neural Networks have achieved great success in recent years, but creating accurate pixel-wise training labels is still a boring and expensive task, especially for large-scale high-resolution remote sensing images (HRSI). Inspired by the stacked hourglass model for human joints detection, we propose a weakly-supervised road segmentation method using point annotations in this article. First, we design a patch-based DCNN model for road seeds and background points detection and train the model using point annotations. Then, in the process of road segmentation, the DCNN model detects a series of road and background points that are used to train a Support Vector Machine Classifier (SVC) for classifying each pixel into road or non-road. According to the local geometry shape of road and the inaccurate classification of SVC, a Multi-scale & Multi-direction Gabor Filter (MMGF) is put forward to estimate the road potential. Finally, the Active Contour Model based on local binary fitting energy (LBF-Snake) is introduced to extract the road regions from the inhomogeneous road potential. Qualitative and Quantitative comparisons show that our method achieves competitive results comparing to fully-supervised semantic methods on publicly available datasets.
   </p>
 
 # Dataset
@@ -62,10 +62,24 @@ Exhibition of more predicted samples, in which the predicted road center points 
 </p>
 
 # Output Visualization
-Exhibition of some road segmentation results on the Massachusetts Roads dataset.
-<p><img src='resources/image1_overlay.jpg?raw=true' /></p>
-<p><img src='resources/image2_overlay.jpg?raw=true' /></p>
-<p><img src='resources/image7_overlay.jpg?raw=true' /></p>
-<p><img src='resources/image3_overlay.jpg?raw=true' /></p>
-<p><img src='resources/image8-overlay.jpg?raw=true' /></p>
+Exhibition of some road segmentation results on the Google Earth & Massachusetts Roads dataset.
+<table>
+<tr><td><img src='resources/image1.jpg?raw=true' /></td><td><img src='resources/image1_overlay.jpg?raw=true' /></td><tr>
+<tr><td><img src='resources/image2.jpg?raw=true' /></td><td><img src='resources/image2_overlay.jpg?raw=true' /></td><tr>
+<tr><td><img src='resources/image7.jpg?raw=true' /></td><td><img src='resources/image7_overlay.jpg?raw=true' /></td><tr>
+<tr><td><img src='resources/image24.jpg?raw=true' /></td><td><img src='resources/image24_overlay.jpg?raw=true' /></td><tr>
+<tr><td><img src='resources/image37.jpg?raw=true' /></td><td><img src='resources/image37_overlay.jpg?raw=true' /></td><tr>
+<tr><td><img src='resources/image45.jpg?raw=true' /></td><td><img src='resources/image45_overlay.jpg?raw=true' /></td><tr>
+<tr><td><img src='resources/image46.jpg?raw=true' /></td><td><img src='resources/image46_overlay.jpg?raw=true' /></td><tr>
+<tr><td><img src='resources/image92.jpg?raw=true' /></td><td><img src='resources/image92_overlay.jpg?raw=true' /></td><tr>
+<tr><td><img src='resources/image3.jpg?raw=true' /></td><td><img src='resources/image3_overlay.jpg?raw=true' /></td><tr>
+<tr><td><img src='resources/image8.jpg?raw=true' /></td><td><img src='resources/image8-overlay.jpg?raw=true' /></td><tr>
+<tr><td><img src='resources/11128870_15.tiff?raw=true' /></td><td><img src='resources/11128870_15_overlay.jpg?raw=true' /></td><tr>
+<tr><td><img src='resources/11728825_15.tiff?raw=true' /></td><td><img src='resources/11728825_15_overlay.jpg?raw=true' /></td><tr>
+<tr><td><img src='resources/18328960_15.tiff?raw=true' /></td><td><img src='resources/18328960_15_overlay.jpg?raw=true' /></td><tr>
+<tr><td><img src='resources/18478930_15.tiff?raw=true' /></td><td><img src='resources/18478930_15_overlay.jpg?raw=true' /></td><tr>
+<tr><td><img src='resources/20728960_15.tiff?raw=true' /></td><td><img src='resources/20728960_15_overlay.jpg?raw=true' /></td><tr>
+<tr><td><img src='resources/20878930_15.tiff?raw=true' /></td><td><img src='resources/20878930_15_overlay.jpg?raw=true' /></td><tr>
+<tr><td><img src='resources/23278915_15.tiff?raw=true' /></td><td><img src='resources/23278915_15_overlay.jpg?raw=true' /></td><tr>
+</table>
 
