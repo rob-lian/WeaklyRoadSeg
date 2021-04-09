@@ -87,3 +87,8 @@ Exhibition of some road segmentation results on the Google Earth & Massachusetts
 </table>
 Checking the results of our approach in Massachusetts roads, although there are some false positives and false negatives, we find that roads really exist in the regions of false positive (red) and no road exists in the false negative area (blue). Thus, higher scores do not necessarily mean better segmentation in Massachusetts road dataset. 
 
+# Paper Citation
+If our work has any inspiration for your research, please cite this our paper:
+<address>
+It is temporarily unavailable due to the double-blind review of doctoral dissertation. 
+</address>
